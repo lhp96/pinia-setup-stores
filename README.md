@@ -9,3 +9,7 @@ vue -> TS
 # run
 pnpm dev
 ```
+
+```
+pnpm i pinia
+```
