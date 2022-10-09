@@ -12,7 +12,7 @@ export const useTodoStore = defineStore("user", () => {
   const count = computed(() => items.length);
   let idx = 0;
 
-  const addItem = () => {
+  const addItem = async () => {
     if (newItem.value) {
       items.push({
         id: ++idx,
@@ -20,6 +20,7 @@ export const useTodoStore = defineStore("user", () => {
       });
       newItem.value = "";
     }
+    return "aaa";
   };
 
   const delItem = (item: Item) => {
